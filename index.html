@@ -20,7 +20,7 @@
   <iframe id="dashboard" src=""></iframe>
 
   <script>
-    const links = [
+    var links = [
       "https://app.powerbi.com/view?r=eyJrIjoiNTljYmY2NTctNTQ4Yi00ZWU5LWEyMjctOTFjN2UwM2RiODY3IiwidCI6ImZiMmI1MzQ5LTU5MjYtNDU4ZC1iYzA3LTMwZjYxMDhjMjc2OSJ9", // FAROL LOCAÇÃO
       "https://app.powerbi.com/view?r=eyJrIjoiMDBhNjU1ZjEtYjBhMC00ZmE4LWJmZjgtODY4NzNmYjQwOWUwIiwidCI6ImZiMmI1MzQ5LTU5MjYtNDU4ZC1iYzA3LTMwZjYxMDhjMjc2OSJ9", // FAROL OFICINA CLIENTES
       "https://app.powerbi.com/view?r=eyJrIjoiMDdjYTk4ZDUtYjg5Ny00ZWE0LWFmMWEtOGJmNTAwZWY4YTdkIiwidCI6ImZiMmI1MzQ5LTU5MjYtNDU4ZC1iYzA3LTMwZjYxMDhjMjc2OSJ9", // FAROL TERCEIRO
@@ -32,8 +32,8 @@
       "https://app.powerbi.com/view?r=eyJrIjoiYmM5MmJmNGItMTE2Ni00NjAxLTkzYjQtYTFmMjg1NmU3Y2M1IiwidCI6ImZiMmI1MzQ5LTU5MjYtNDU4ZC1iYzA3LTMwZjYxMDhjMjc2OSJ9" // NPS - PESQUISA DE SATISFAÇÃO
     ];
 
-    let current = 0;
-    const iframe = document.getElementById("dashboard");
+    var current = 0;
+    var iframe = document.getElementById("dashboard");
 
     function mostrarProximoRelatorio() {
       iframe.src = links[current];
@@ -45,3 +45,4 @@
   </script>
 </body>
 </html>
+
